@@ -8,7 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/* header */
 .header {
   height: 100vh;
   min-height: 600px;
@@ -20,25 +20,19 @@
   background-color: #f2f2f2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
-  top: 64px;
-  right: 0;
+  top: 30px;
+  left: 64px;
+  z-index: 4;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-/* header */
 .header__title {
   line-height: 96px;
   font-size: 102px;
@@ -74,16 +68,14 @@
   z-index: 1;
 }
 
-.logo {
-  width: 183px;
-  height: 32px;
-}
-
-.logo_place_header {
-  background-image: url(../images/logo_place_header.svg);
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
   position: absolute;
-  top: 30px;
-  left: 64px;
+  top: 64px;
+  right: 0;
 }
 
 /* description */
@@ -95,13 +87,12 @@
 .two-columns {
   width: 80%;
   display: flex;
-  margin: 100px auto 200px;
-  /* ^ очень помог комментарий про отступы в "section-title" */
+  margin: 100px auto 0;
   justify-content: space-between;
 }
 
 .two-columns__brief {
-  margin-top: 0px;
+  margin-top: 0;
   width: 175px;
   color:#2f80ed;
   line-height: 1.2;
@@ -114,10 +105,6 @@
   min-width: 784px;
 }
 
-.two-columns__span-accent {
-  font-weight: bold;
-}
-
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
@@ -126,7 +113,10 @@
   margin-bottom: 30px;
 }
 
-/* псевдокласс */
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
@@ -145,35 +135,34 @@
   font-weight: bold;
   text-align: center;
   width: 60%;
-  margin: 0;
+  margin: 100px auto 0;
 }
 
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
   text-align: center;
   width: 60%;
   margin-top: 20px;
   margin-bottom: 0;
 }
-/* блок таблицы использовать повторно */
+
 .table {
   display: flex;
   width: 1100px;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin: 0 auto 100px; */
+  margin: 0 auto 100px;
 }
 
 .table__cell {
-  margin-top: 60px;
-}
-
-.table__cell_theme_light {
-  color: #000000;
+  margin: 60px 0 0;
   width: 250px;
-  margin: 0 auto 100px;
 }
+/* Дальше в работе, когда нам нужно переиспользовать классы блока и стилизовать их для темной темы, там нужен модификатор и мы не дублируем свойства, которые уже есть, а переписываем те, которые меняются.
+^ спасибо, супер!
+ */
 
 .table__heading {
   line-height: 1.15;
@@ -197,14 +186,12 @@
   flex-direction: column;
   position: relative;
   background: no-repeat left bottom url("../images/feynman.png"), #f2f2f2;
-  /* ^ background shorthand property */
 }
 
 .feynman__title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-
   width: 648px;
   margin: 100px auto 0;
   text-align: center;
@@ -243,22 +230,38 @@
 .section-tittle_theme_dark {
   color: white;
   margin: 90px auto 0;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  text-align: center;
   margin: 20px auto 0;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
-/* таблица темная */
 .table_theme_dark {
   margin: 0 auto 90px;
   z-index: 1;
 }
 
-.table__heading_theme_dark {
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  margin: 80px 0 0;
+}
+/* ^ значение берется из последнего класса в иерархии css файла */
+
+  .table__heading_theme_dark {
+  color: white;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -267,11 +270,10 @@
 }
 
 .table__text_theme_dark {
+  color: white;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .kaufman__traingle {
@@ -299,48 +301,54 @@
   justify-content: space-between;
 }
 
-.footer__column {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
-}
-.column__content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author {
+  width: fit-content;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 18px 0;
 }
 
+/* footer__column_content_info */
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
   text-align: start;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0 16px;
+  margin-bottom: 16px;
+}
+
+.footer__list {
   list-style-type: none;
   padding-left: 0;
 }
 
-.column-link {
+.footer__column-link {
   text-decoration: none;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 16px;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
