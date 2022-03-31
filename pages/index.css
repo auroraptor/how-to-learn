@@ -1,0 +1,83 @@
+@import url(../blocks/root/root.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/description/description.css);
+@import url(../blocks/content/techniques/techniques.css);
+@import url(../blocks/content/two-columns/two-columns.css);
+@import url(../blocks/content/digits/digits.css);
+@import url(../blocks/content/section-title/section-title.css);
+@import url(../blocks/content/section-subtitle/section-subtitle.css);
+@import url(../blocks/content/table/table.css);
+@import url(../blocks/content/feynman/feynman.css);
+@import url(../blocks/content/kaufman/kaufman.css);
+@import url(../blocks/rotation/rotation.css);
+/* выше анимация вращения */
+@import url(../blocks/content/cards/cards.css);
+@import url(../blocks/content/video/video.css);
+/* oakley */
+@import url(../blocks/content/oakley/oakley.css);
+/* khan */
+@import url(../blocks/content/khan/khan.css);
+/* resources */
+@import url(../blocks/content/resources/resources.css);
+/* подключаю сначала блоки */
+/* ниже элементы */
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__main-illustrarion/header__main-illustration.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/content/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/content/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/content/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/content/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/content/table/__cell/table__cell.css);
+@import url(../blocks/content/table/__heading/table__heading.css);
+@import url(../blocks/content/table/__text/table__text.css);
+@import url(../blocks/content/feynman/__title/feynman__title.css);
+@import url(../blocks/content/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/content/feynman/__link/feynman__link.css);
+@import url(../blocks/content/kaufman/__traingle/kaufman__traingle.css);
+@import url(../blocks/footer/__columns/footer__columns.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
+@import url(../blocks/footer/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
+/* элементы блока cards */
+@import url(../blocks/content/cards/__description/cards__description.css);
+@import url(../blocks/content/cards/__image/cards__image.css);
+@import url(../blocks/content/cards/__item/cards__item.css);
+@import url(../blocks/content/cards/__title/cards__title.css);
+/* элементы блока video */
+@import url(../blocks/content/video/__iframe/video__iframe.css);
+@import url(../blocks/content/video/__iframes/video__iframes.css);
+/* подключаю элементы блока khan */
+@import url(../blocks/content/khan/__author/khan__author.css);
+@import url(../blocks/content/khan/__book-container/khan__book-container.css);
+@import url(../blocks/content/khan/__book-pic/khan__book-pic.css);
+@import url(../blocks/content/khan/__buy-link/khan__buy-link.css);
+@import url(../blocks/content/khan/__container/khan__container.css);
+@import url(../blocks/content/khan/__quote-author-subline/khan__quote-author-subline.css);
+@import url(../blocks/content/khan/__quote-author/khan__quote-author.css);
+@import url(../blocks/content/khan/__quote/khan__quote.css);
+@import url(../blocks/content/khan/__title/khan__title.css);
+/* элементы блока resources */
+@import url(../blocks/content/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/content/resources/__logo/resources__logo.css);
+/* выше подключила элементы */
+/* ниже модификаторы */
+@import url(../blocks/logo/_place/_header/logo_place_header.css);
+@import url(../blocks/content/section-title/_theme/section-title_theme_dark.css);
+@import url(../blocks/content/section-subtitle/_theme/section-subtitle_theme_dark.css);
+@import url(../blocks/content/table/_theme/table_theme_dark.css);
+@import url(../blocks/content/table/__cell/_theme/table__cell_theme_dark.css);
+@import url(../blocks/content/table/__heading/_theme/table__heading_theme_dark.css);
+@import url(../blocks/content/table/__text/_theme/table__text_theme_dark);
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
+@import url(../blocks/logo/_place/_footer/logo_place_footer.css);
+/* а теперь подключила модификаторы */
+
