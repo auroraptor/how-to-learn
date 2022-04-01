@@ -41,6 +41,7 @@
 @import url(../blocks/content/feynman/__link/feynman__link.css);
 @import url(../blocks/content/kaufman/__traingle/kaufman__traingle.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
+@import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
@@ -72,8 +73,8 @@
 /* выше подключила элементы */
 /* ниже модификаторы */
 @import url(../blocks/logo/_place/_header/logo_place_header.css);
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
-@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+@import url(../blocks/content/section-title/_theme/section-title_theme_dark.css);
+@import url(../blocks/content/section-subtitle/_theme/section-subtitle_theme_dark.css);
 @import url(../blocks/content/table/_theme/table_theme_dark.css);
 @import url(../blocks/content/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/content/table/__heading/_theme/table__heading_theme_dark.css);
