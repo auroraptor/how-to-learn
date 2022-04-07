@@ -71,7 +71,7 @@
 @import url(../blocks/footer/__column/footer__column.css);
 /* выше подключила элементы */
 /* ниже модификаторы */
-@import url(../blocks/logo/_place/_header/logo_place_header.css);
+@import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 @import url(../blocks/table/_theme/table_theme_dark.css);
@@ -81,6 +81,6 @@
 @import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_info.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_social.css);
-@import url(../blocks/logo/_place/_footer/logo_place_footer.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
 /* а теперь подключила модификаторы */
 
