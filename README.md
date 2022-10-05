@@ -1,5 +1,9 @@
 # НАУЧИТЬСЯ УЧИТЬСЯ
 
+![Feynman method](https://media.giphy.com/media/Hy42qg9NvnRIiFpqeh/giphy.gif)
+
+[How to learn](auroraptor.github.io/how-to-learn/)
+
 Проект типового одностраничного сайта
 
 ## здесь будет все красиво но не сразу
