@@ -2,7 +2,7 @@
 
 ![Feynman method](https://media.giphy.com/media/Hy42qg9NvnRIiFpqeh/giphy.gif)
 
-[How to learn](auroraptor.github.io/how-to-learn/)
+[How to learn](https://auroraptor.github.io/how-to-learn/)
 
 Проект типового одностраничного сайта
 
