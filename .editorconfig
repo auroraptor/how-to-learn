@@ -5,8 +5,6 @@
 
 # any sections. Set to true to stop .editor config file search on current file
 
-root = true
-
 [*]
 # Indentation style
 
